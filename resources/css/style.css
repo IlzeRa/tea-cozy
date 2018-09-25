@@ -9,6 +9,12 @@ body{
   padding: 0px;
 }
 
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+
 /*Header*/
 header{
 height: 69px;
@@ -45,45 +51,93 @@ a{
 }
 
 /*Main section*/
-.main{
-  display: flex;
-  position: relative;
+main{
+  margin:0px;
   padding-top: 70px;
-
-}
-/*Subsection - Mission*/
-.mission{
-  display: flex;
+  display:flex;
+  position: relative;
   flex-direction: column;
-  width:100%;
-  margin:auto;
+  justify-content: center;
+  align-items: center;
+}
 
+.container{
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 700px;
-}
-
-.background{
-  display:flex;
+  flex-direction: column;
   width: 1200px;
   height: 700px;
-  margin: 0px;
-  padding:0px;
-  align-items: center;
-  justify-content: center;
-}
+  background-image:url("../images/img-mission-background.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
 
 .heading{
-  display:flex;
-  flex-direction: column;
-  position:absolute;
+  display:inline-block;
   background-color: black;
   width: 1200px;
-  height: 120px;
+  height: 100px;
 }
 
-h2,
-h4{
-  margin:0px;
-  padding:10px;
+.heading h2, h4, .heading-tea h2, h4{
+  padding:10px 0px;
+}
+
+.containerX{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.heading-tea{
+display: inline-block;
+width: 1000px;
+}
+
+.blocks{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1000px;
+  justify-content: space-around;
+}
+
+.image{
+  display:flex;
+  flex-direction: column;
+}
+
+.size{
+  width:300px;
+  height:200px;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.pic-one{
+  background-image: url("../images/img-berryblitz.jpg");
+}
+
+.pic-two{
+  background-image: url("../images/img-spiced-rum.jpg");
   }
+
+.pic-three{
+  background-image: url("../images/img-donut.jpg");
+    }
+
+.pic-four{
+  background-image: url("../images/img-myrtle-ave.jpg");
+      }
+
+.pic-five{
+  background-image: url("../images/img-bedford-bizarre.jpg");
+}
+
+.image h4{
+  padding-top:10px;
+}
